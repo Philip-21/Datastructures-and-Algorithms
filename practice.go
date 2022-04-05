@@ -122,7 +122,7 @@ func main() { // the main() is an entry point to my application
 	//assigning arrays
 	r := [...]int{1, 4, 5}
 	q := r
-	q[2] = 8 //assigning 8 to the 2nd index of r
+	q[2] = 8 //Assigning 8 to the 2nd index of r
 	fmt.Println(r)
 	fmt.Println(q)
 
