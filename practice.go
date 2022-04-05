@@ -318,6 +318,8 @@ loop:
 	}
 
 	// (J)POINTERS
+	//pointers hold the memory address of the data but not the data itself
+	//pointers passes references to values and records within your program
 	ab := [5]int{2, 5, 9, 1, 6}
 	bc := &ab //bc points to the same data as ab
 	bc[3] = 4 //assigning 4 to the 3rd index to bc which would also assign 4 to ab in the 3rd index due to the pointer
