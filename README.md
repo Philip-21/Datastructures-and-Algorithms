@@ -1,2 +1,2 @@
 # Golang-Arena
-Repository for Golang based codes and applications 
+Repository for Golang based codes and tutorials 
