@@ -1,2 +1,2 @@
-# Go-Datastructures and Algoritms
+# Go-Datastructures and Algorithms
 Repository for Golang based codes and tutorials
