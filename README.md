@@ -1,2 +1,2 @@
-# Go-Datastructures and Algorithms
-Repository for Golang based codes and tutorials
+# Golang-Arena
+Repository for Golang based datastructures and code applications
