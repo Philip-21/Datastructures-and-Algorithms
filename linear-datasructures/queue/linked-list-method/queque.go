@@ -10,7 +10,6 @@ import (
 
 func main() {
 	queque := list.New()
-
 	//PushBack inserts a new element e
 	//with value v at the back of list l and returns e
 	queque.PushBack("Data Strutures")
