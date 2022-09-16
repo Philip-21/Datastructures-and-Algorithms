@@ -87,6 +87,7 @@ func Example2() {
 	d := list.PushParentesis(")", "}", "]")
 	for d == list.PushParentesis("(", "{", "[") {
 		if  == ""; list[-1] == "" {
+			
 
 		}
 	}
