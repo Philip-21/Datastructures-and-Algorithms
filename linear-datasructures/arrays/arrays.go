@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//arrays store elements in contiguous memory locations
 //Create an array with the number 0 to 10
 func Exercise1() {
 	new := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
