@@ -76,7 +76,7 @@ func (ord *Order) New(cost int, quantity int, product string, customerName strin
 
 //the Add method on the Queue class takes the ord
 //parameter and adds it to Queue based on the cost
-func (que *Queues) Add(ord *Order) {
+func (que *Queues) Push(ord *Order) {
 	if len(*que) == 0 {
 
 		*que = append(*que, ord)

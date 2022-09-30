@@ -29,7 +29,7 @@ func (s *Stack) Pop() (string, bool) {
 		return "", false
 	} else {
 		///get the index of the last element in the list
-		index := len(*s) - 1   //gets the index of the top most element
+		index := len(*s) - 1   //gets the index of the top most element i.e the last element
 		element := (*s)[index] //grab the value and storing it
 		*s = (*s)[:index]      //removing the element (i.e slicing all the element but not including the element we want to remove )
 		return element, true

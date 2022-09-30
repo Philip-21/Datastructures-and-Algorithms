@@ -33,7 +33,7 @@ func ForLoop() {
 	}
 
 	//exmaple 4
-	//Give th odd and even numbers of particluar items
+	//Give the odd and even numbers of particluar items
 	for z := 0; z < 5; z++ {
 		fmt.Println(z)
 		if z%2 == 0 { //odd number that will give remainders willpass through this statement

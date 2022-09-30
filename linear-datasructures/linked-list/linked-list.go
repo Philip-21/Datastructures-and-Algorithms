@@ -14,8 +14,9 @@ import (
 //a node at the beginning of the linked list is referred to as HEAD
 
 type node struct {
-	next *node //pointer or reference
 	data int   //Data
+	next *node //pointer or reference
+
 }
 
 type linkedList struct {
