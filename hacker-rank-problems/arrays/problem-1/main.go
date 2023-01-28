@@ -12,12 +12,11 @@ the loop updates the values of i and j using the post-iteration statement (i, j 
 This causes the loop to eventually terminate when i and j meet or cross each other.*/
 import (
 	"fmt"
+	"log"
 	"os"
 )
 
-func reverseArray() ([]int, error) {
-	a := []int{1, 4, 3, 2}
-
+func reverseArray(a []int) ([]int, error) {
 	for i, j := 0, len(a)-1; i < j; i, j = i+1, j-1 {
 		a[i], a[j] = a[j], a[i]
 	}
@@ -35,6 +34,9 @@ func Errcheck(err error) {
 }
 
 func main() {
-	reverseArray()
+	_, err := reverseArray([]int{1, 4, 3, 2})
+	if err != nil {
+		log.Println(err)
+	}
 
 }
