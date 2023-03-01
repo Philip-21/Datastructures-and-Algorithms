@@ -1,11 +1,13 @@
 package main
 
+//A simple way of using fuzzing to test a program
 import (
 	"errors"
 	"fmt"
 	"testing"
 )
 
+/*A calculator for performing simple arithmetic operations*/
 func calculator(num1, num2 float64, operator string) (float64, error) {
 	var result float64
 
@@ -27,7 +29,8 @@ func calculator(num1, num2 float64, operator string) (float64, error) {
 	return result, nil
 }
 
-func fuzzCalculator(data float64) float64 {
+/*Accepts inputs, calls the calculator function and executes inputs*/
+func InputCalculator(data float64) float64 {
 	inputcases := []struct {
 		input1   float64
 		input2   float64
@@ -54,14 +57,23 @@ func fuzzCalculator(data float64) float64 {
 
 }
 
-func FuzzTest(f *testing.F) {
+// testing the Calculator inputs function
+func FuzzTestInput(f *testing.F) {
 	f.Fuzz(func(t *testing.T, data float64) {
-		_ = fuzzCalculator(data)
+		_ = InputCalculator(data)
 	})
 
 }
 
-func TestCalculator(t *testing.T) {
+// Tests the calculator function
+func FuzzTestCalculator(f *testing.F) {
+	f.Fuzz(func(t *testing.T, num1, num2 float64, operator string) {
+		_, _ = calculator(num1, num2, operator)
+	})
+}
+
+// normal testing
+func TestCalculation(t *testing.T) {
 	testcases := []struct {
 		num1     float64
 		num2     float64
