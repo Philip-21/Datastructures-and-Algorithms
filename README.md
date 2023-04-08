@@ -1,3 +1,3 @@
 # DSA
 
-### My DSA Repo for Golang and Python implementations
+#### My DSA Repo for implementating Golang and Python 
