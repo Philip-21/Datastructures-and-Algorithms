@@ -1,2 +1,3 @@
-# Golang-Arena
-Repository for Golang based datastructures and code applications
+# DSA
+
+### My DSA Repo for Golang and Python implementations
